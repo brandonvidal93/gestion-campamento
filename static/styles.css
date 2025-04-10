@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+canvas {
+  border: 2px solid #000;
+  margin-bottom: 10px;
+  touch-action: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Firma Digital</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de Firma Digital</h1>
+    <form id="firma-form">
+      <label for="identificacion">Identificación:</label>
+      <input type="text" id="identificacion" name="identificacion" required />
+      
+      <hr>
+
+      <label for="canvas">Firma:</label>
+      <canvas id="firma-canvas" width="300" height="150"></canvas>
+
+      <hr>
+
+      <div class="buttons">
+        <button type="button" id="clear-btn">Limpiar Firma</button>
+        <button type="submit">Guardar</button>
+      </div>
+    </form>
+
+    <hr>
+
+    <a href="/descargar-excel" download>
+      <button>Descargar Excel</button>
+    </a>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
