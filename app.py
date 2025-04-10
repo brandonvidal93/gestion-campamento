@@ -54,4 +54,5 @@ def descargar_excel():
     return send_file(EXCEL_PATH, as_attachment=True)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Usa el puerto de Render, o 5000 en local
+    app.run(host="0.0.0.0", port=port)
